@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 10px;
+    font-size: x-large;
 }
 .topnav {
     display: flex;
@@ -26,7 +27,7 @@
     font-size: xx-large;
 }
 .rest{
-    float: right;
+    float:inline-end;
 }
 .txt{
     position: relative;
@@ -76,3 +77,45 @@
     gap: 10%;
     
 }
+button{
+    padding: 10px;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .head {
+        grid-template-columns: 1fr;
+    }
+    .topnav a {
+        font-size: medium;
+    }
+    .topnav {
+        flex-direction: column;
+    }
+    .first, .second, .plants {
+        grid-template-columns: 1fr; 
+    }
+    .suc {
+        flex-direction: column; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .first, .second, .plants {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .suc {
+        flex-direction: row; /
+    }
+}
+
+@media (min-width: 901px) {
+    .first, .second, .plants {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .suc {
+        flex-direction: row; 
+    }
+}
+
