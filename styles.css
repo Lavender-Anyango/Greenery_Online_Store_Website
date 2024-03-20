@@ -1,11 +1,34 @@
-.fall{
-    background-image:url("IMAGES/suc1.jpg");
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 400px;
-    padding: 10%;
-    position: relative;
+*{
+    margin: 0px;
+    padding: 0px;
 }
+
+body{
+    font-size: 20px;
+}
+
+.fall{
+    position: absolute;
+    text-align: center
+    
+}
+
+.fall img{
+    width: 600px;
+}
+
+.falltext{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .suc h4{
+    font-weight: bold;
+    font-size: 40px;
+
+  }
 .head{
     background-color: green;
     display: grid;
@@ -14,109 +37,192 @@
     font-size: x-large;
     color: white;
 }
-.topnav {
-    display: flex;
-    gap: 30px;
+
+.topnav h4{
+    font-size: 40px;
+    margin-top: -10px;
+    margin-left: -35px;
 }
 
-.topnav a {
-    text-decoration: none;
-    font-weight: 700;
+.topnav ul{
+    display: inline-flex;
+    list-style: none;
 }
-.vanolla{
+
+.topnav ul li{
+    width: 120px;
+    margin: 25px;
+    padding: 15px;
     float: left;
-    font-size: xx-large;
 }
-.rest{
-    float:inline-end;
+
+.topnav ul li a{
+    text-decoration: none;
+    color: black;
+
 }
-.txt{
-    position: relative;
+
+.green a{
+    color: green;
 }
+
 .first{
     
-        display: grid;
-        grid-template-columns: 50% 50%; 
-}
-#suc3{
-    width: 250px;
-    height: 300px;
-}
+    display: grid;
+    grid-template-columns: 50% 50%; 
+} 
 .suc{
     display: flex;
     padding-left: 20px;
 }
+.money{
+    font-weight: bold;
+    font-size: 40px;
+    color: green
+}
+
+.para{
+    color: grey;
+    font-weight: 200;
+
+
+}
+
 .second{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.spring{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+.spring h3{
+    font-size: 50px;
+}
+.spring p{
+    color: grey;
+    font-size: 30px;
+}
+#pot{
+    font-size: 30px;
+}
+.plant{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.plant1{
+    font-size: 40px;
+    font-weight: bolder;
+    color:grey;
+}
+.header2{
+    text-align: center;
 }
 .plants{
     display: grid;
     grid-template-columns: 50% 50%;
+    place-content: center;
 }
-.header2{
-    text-align: center;
-    font-size: 40px;
-    font-weight: 60%;
+.arrivals{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#image7{
+    width: 650px;
+    padding-left: 10px; 
 
 }
-.para{
+.arrivals1{
     text-align: center;
+}
+.cross{
+    text-decoration: line-through;
+}
+.auction{
     color: green;
 }
-.cent{
+button{
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.feature{
     text-align: center;
+    font-size: 40px;
 }
-.container {
-    display: grid;
-
+.image14{
+    width: 60%;
+    height: 80%;
+    margin-left: 200px;
 }
-
-.column {
-    display: flex;
-    gap: 10%;
+.fparagraph{
+    float: left;
+}
+.category{
+    font-weight: bold;
+}
+.tree{
+    background-image: url(IMAGES/tree.jpg);
+    background-size:cover;
+    padding: 120px;
+    background-repeat: no-repeat;
+    width: 1550px;
+    height: 70%;
+    margin-right: 50px;
     
 }
-button{
-    padding: 10px;
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    grid-gap: 10px; 
+    
+}
+.cactus{
+    text-align: left;
+    margin-left: 200px;
+}
+.vase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-
-/* Media Queries for Responsiveness */
-@media (max-width: 600px) {
-    .head {
-        grid-template-columns: 1fr;
-    }
-    .topnav a {
-        font-size: medium;
-    }
-    .topnav {
-        flex-direction: column;
-    }
-    .first, .second, .plants {
-        grid-template-columns: 1fr; 
-    }
-    .suc {
-        flex-direction: column; 
-    }
+#reviewer{
+    width: 14%;
+    border-radius: 50%;
 }
 
-@media (min-width: 601px) and (max-width: 900px) {
-    .first, .second, .plants {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-    .suc {
-        flex-direction: row; /
-    }
+.mid{
+    border-radius: 40px;
+    width: 200px;
+    height: 250px;
 }
-
-@media (min-width: 901px) {
-    .first, .second, .plants {
-        grid-template-columns: repeat(4, 1fr); 
-    }
-    .suc {
-        flex-direction: row; 
-    }
+.side{
+    border-radius: 40px;
+    width: 120px;
+    height: 140px;
+    margin: 50px;
 }
-
+.testimony{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.arrow{
+    width: 150px;
+    margin-top: 100px;
+}
+.italic{
+    font-style: italic;
+}
+input{
+    padding: 15px;
+    background-color: white;
+}
+#sub{
+    padding: 12px 65px;
+    
+}
