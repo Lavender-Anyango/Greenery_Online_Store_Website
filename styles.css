@@ -226,3 +226,55 @@ input{
     padding: 12px 65px;
     
 }
+
+@media  screen and  (max-width: 600px) {
+    /* .topnav h4 {
+       font-size: 20px; 
+       margin-top: 0; 
+       margin-left: 0; 
+    } */
+   
+    .topnav  ul{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+   
+    .topnav ul li {
+       width: auto; 
+       margin: 10px 0; 
+       padding: 5px;
+       float: none;
+    }
+   
+    .topnav ul li a {
+       text-decoration: none;
+       color: black;
+    }
+    .topnav ul li h4{
+        font-size: 20px;
+        margin-left: 2px;
+    }
+    .first{
+        grid-template-rows: auto auto;
+    }
+    .fall img{
+        width: 200px;
+    }
+    .suc{
+        flex-wrap: wrap;
+    }
+    .second{
+    
+    }
+    .vase{
+      display: flex;
+      flex-direction: row;
+    
+    }
+    .testimony{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+}
+   
